@@ -363,7 +363,7 @@ footer {
     text-align: center;
     padding: 2em 0;
     position: relative;
-    margin-top: 100vh;
+    margin-top: 90vh;
 }
 
 .footer-container {
@@ -407,4 +407,231 @@ footer {
     width: 100%;
     padding: 10px 0;
     background-color: #111;
+}
+@media only screen and (max-width: 1240px, min-width: 1001px;){
+    body{
+        font-size: 13px;
+    }
+    header p{font-size: 1.8em;}
+    .bg1{
+        height: 60vh;
+
+    }
+    .bg1 h1{
+        margin-top: 0vh;
+        font-size: 41px;
+    }
+    .bg1 h2{
+        font-size: 30px;
+    }
+    .slider-controls label{
+        padding: 1.2em 1em;
+        font-size: 25px;
+    }
+    .slider{
+        max-height: 600px;
+    }
+    .gp{
+        top: 130vh;
+    }
+    .play{
+        top: 140vh;
+    }
+    .adviteser{
+        top: 150vh;
+    }
+    .developers{
+        top: 140vh;
+    }
+    .advertisement{
+        top: 139vh;
+    }
+    .text1, .text2{
+        top: 133vh;
+    }
+    .text3, .text8{
+        top: 139vh;
+    }
+    .text4, .text7{
+        top: 144vh;
+    }
+    .text5, .text6{
+        top: 147vh;
+    }
+    .arrow, .arrow1{
+        top: 141vh;
+    }
+    .arrowl, .arrowl1{
+        top: 142vh;
+    }
+    .arrowv1{
+        top: 137vh;
+    }
+    @keyframes arrowv1Move {
+        0% { top: 137vh; opacity: 1; }
+        50% { top: 133vh; opacity: 0; }
+        100% { top: 130vh; opacity: 0; }
+    }
+    .arrown1{
+        top: 134vh;
+    }
+    @keyframes arrown1Move {
+        0% { top: 134vh; opacity: 1; }
+        50% { top: 137vh; opacity: 0; }
+        100% { top: 139vh; opacity: 0; }
+    }
+    .arrowv{
+        top: 149vh;
+    }
+    @keyframes arrowvMove {
+        0% { top: 149vh; opacity: 1; }
+        50% { top: 144vh; opacity: 0; }
+        100% { top: 140vh; opacity: 0; }
+    }
+    .arrown{
+        top: 146vh;
+    }
+    @keyframes arrownMove {
+        0% { top: 144vh; opacity: 1; }
+        50% { top: 148vh; opacity: 0; }
+        100% { top: 152vh; opacity: 0; }
+    }
+    footer{
+        margin-top: 50vh;
+    }
+}
+@media only screen and (max-width: 1000px){
+    body{
+        font-size: 10px;
+    }
+    .bg1{
+        height: 50vh;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .slider-controls label{
+        padding: 1.5em 2em;
+        font-size: 15px;
+    }
+    .slide{
+        height: 35vh;
+    }
+    .cont{
+        font-size: 15px;
+    }
+    .gp{
+        top: 103vh;
+        left: 40%;
+    }
+    .play{
+        top: 116vh;
+        left: 75%;
+    }
+    .adviteser{
+        top: 130vh;
+        left: 42%;
+    }
+    .developers{
+        top: 116vh;
+        left: 10%;
+    }
+    .advertisement{
+        top: 115vh;
+        left: 41%;
+    }
+    .texts{
+        font-size: 12px;
+    }
+    .text1, .text2{
+        top: 107vh;
+    }
+    .text3, .text8{
+        top: 113vh;
+    }
+    .text4, .text7{
+        top: 123vh;
+    }
+    .text5, .text6{
+        top: 127vh;
+    }
+    .text5{
+        left: 55%;
+    }
+    .text6{
+        left: 37%;
+    }
+    .arrow, .arrow1{
+        top: 116vh;
+    }
+    .arrow{
+        left: 63%;
+    }
+    @keyframes arrowMove {
+        0% { left: 63%; opacity: 1; }
+        50% { left: 67%; opacity: 0; }
+        100% { left: 70%; opacity: 0; }
+    }
+    .arrow1{
+        left: 33%;
+    }
+    @keyframes arrow1Move {
+        0% { left: 33%; opacity: 1; }
+        50% { left: 37%; opacity: 0; }
+        100% { left: 39%; opacity: 0; }
+    }
+    .arrowl1{
+        left: 38%;
+    }
+    @keyframes arrowl1Move {
+        0% { left: 38%; opacity: 1; }
+        50% { left: 35%; opacity: 0; }
+        100% { left: 33%; opacity: 0; }
+    }
+    .arrowl{
+        left:70%;
+    }
+    @keyframes arrowlMove {
+        0% { left: 70%; opacity: 1; }
+        50% { left: 66%; opacity: 0; }
+        100% { left: 62%; opacity: 0; }
+    }
+    .arrowl, .arrowl1{
+        top: 118vh;
+    }
+    .arrowv1{
+        top: 113vh;
+    }
+    @keyframes arrowv1Move {
+        0% { top: 113vh; opacity: 1; }
+        50% { top: 109vh; opacity: 0; }
+        100% { top: 106vh; opacity: 0; }
+    }
+    .arrown1{
+        top: 108vh;
+    }
+    @keyframes arrown1Move {
+        0% { top: 108vh; opacity: 1; }
+        50% { top: 111vh; opacity: 0; }
+        100% { top: 115vh; opacity: 0; }
+    }
+    .arrowv{
+        top: 127vh;
+    }
+    @keyframes arrowvMove {
+        0% { top: 127vh; opacity: 1; }
+        50% { top: 124vh; opacity: 0; }
+        100% { top: 120vh; opacity: 0; }
+    }
+    .arrown{
+        top: 124vh;
+    }
+    @keyframes arrownMove {
+        0% { top: 124vh; opacity: 1; }
+        50% { top: 128vh; opacity: 0; }
+        100% { top: 132vh; opacity: 0; }
+    }
+    footer{
+        margin-top: 50vh;
+    }
 }
