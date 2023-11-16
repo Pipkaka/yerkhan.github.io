@@ -1,0 +1,1032 @@
+body {
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: rgb(145, 145, 145);
+    background-image: url(StockPhotos/jonas-von-werne-8VcWVVsrPBk-unsplash.jpg);
+
+    background-size: 100%;
+    width: 100%;
+    margin-top: 0;
+    left: 0;
+    height: 80vh;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+}
+h1, h2{
+    transition-duration: 0.5s;
+}
+h1:hover, h2:hover{
+    color: white;
+}
+
+#header h1 {
+    margin: 0;
+    display: inline-block;
+    font-size: 1.9em;
+    cursor: pointer;
+    transition-duration: 0.5s;
+
+}
+#header h1:hover{
+    color: black;
+}
+#header h2:hover{
+    color: black;
+}
+.background {
+
+    text-align: center;
+    filter: brightness(80%);
+    color: #999;
+    background-size: 100%;
+}
+.text{
+    position: absolute;
+    top: 25%;
+    margin-left: 5%;
+    font-size: 200%;
+    text-align: start;
+    color: white;
+    font-family: 'Stencil';
+    max-height: 70vh;
+    max-width: 60%;
+}
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 10em auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#slide1:checked ~ .slides { transform: translateX(0%); }
+#slide2:checked ~ .slides { transform: translateX(-100%); }
+#slide3:checked ~ .slides { transform: translateX(-200%); }
+#slide4:checked ~ .slides { transform: translateX(-300%); }
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    padding: 0.5em 1em;
+    background-color: #333;
+    border-radius: 5px;
+    margin: 0 0.5em;
+    transition: background-color 0.3s ease-in-out;
+    color: #fff;
+    cursor: pointer;
+}
+
+#slide1:checked ~ .slider-controls label:nth-child(1),
+#slide2:checked ~ .slider-controls label:nth-child(2),
+#slide3:checked ~ .slider-controls label:nth-child(3),
+#slide4:checked ~ .slider-controls label:nth-child(4) {
+    background-color: #777;
+}
+.cont{
+    max-width: 80%;
+}
+.arrow-right{
+    position: absolute;
+    top: 120em;
+    left: 60%;
+  }
+  .arrow-right::before,
+  .arrow-right::after{
+    content:"" ;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+  transform: rotate(45deg) translateY(-50%);
+  animation: arrow 1s linear infinite;
+  }
+  .arrow-right::after{
+    animation-delay: 1.5s;
+  }
+  @keyframes arrow{
+    0%{
+      left: -10px;
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      left: 30px;
+      opacity: 0;
+    }
+  }
+
+  .arrow-right2{
+    position: absolute;
+    top: 139em;
+    left: 30%;
+  }
+  .arrow-right2::before,
+  .arrow-right2::after{
+    content:"" ;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+  transform: rotate(45deg) translateY(-50%);
+  animation: arrow 1s linear infinite;
+  }
+  .arrow-right2::after{
+    animation-delay: 1.5s;
+  }
+  @keyframes arrow{
+    0%{
+      left: -10px;
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      left: 30px;
+      opacity: 0;
+    }
+  }
+
+
+  .arrow-top{
+    position: absolute;
+    top: 133em;
+    left: 42.5em;
+  }
+  .arrow-top::before,
+  .arrow-top::after{
+    content:"" ;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+   
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+  transform: rotate(-45deg) translateY(-10%);
+  animation: arrow2 1s linear infinite;
+  }
+  .arrow-top::after{
+    animation-delay: 1.5s;
+  }
+  @keyframes arrow2{
+    0%{
+      top: -10px;
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      top: 30px;
+      opacity: 0;
+    }
+  }
+  .arrow-top2{
+    position: absolute;
+    top: 148em;
+    left: 42.5em;
+  }
+  .arrow-top2::before,
+  .arrow-top2::after{
+    content:"" ;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+   
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+  transform: rotate(-45deg) translateY(-10%);
+  animation: arrow2 1s linear infinite;
+  }
+  .arrow-top2::after{
+    animation-delay: 1.5s;
+  }
+  @keyframes arrow2{
+    0%{
+      top: -10px;
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      top: 30px;
+      opacity: 0;
+    }
+  }
+
+
+  .arrow-tp{
+    position: absolute;
+    top: 133em;
+    left: 49.5em;
+  }
+  .arrow-tp::before,
+  .arrow-tp::after{
+    content:"" ;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+  transform: rotate(135deg) translateY(-10%);
+  animation: arrow3 1s linear infinite;
+  }
+  .arrow-tp::after{
+    animation-delay: 1.5s;
+  }
+  @keyframes arrow3{
+    0%{
+      top: -10px;
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      top: 30px;
+      opacity: 0;
+    }
+  }
+
+
+  .arrow-tp2{
+    position: absolute;
+    top: 148em;
+    left: 49.5em;
+  }
+  .arrow-tp2::before,
+  .arrow-tp2::after{
+    content:"" ;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+  transform: rotate(135deg) translateY(-10%);
+  animation: arrow3 1s linear infinite;
+  }
+  .arrow-tp2::after{
+    animation-delay: 1.5s;
+  }
+  @keyframes arrow3{
+    0%{
+      top: -10px;
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      top: 30px;
+      opacity: 0;
+    }
+  }
+
+  .arrow-left{
+    position: absolute;
+    top: 142em;
+    left: 58.5em;
+  }
+  .arrow-left::before,
+  .arrow-left::after{
+    content:"" ;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+  transform: rotate(228deg) translateY(-10%);
+  animation: arrow4 1s linear infinite;
+  }
+  .arrow-left::after{
+    animation-delay: 1.5s;
+  }
+  @keyframes arrow4{
+    0%{
+      right: -10px;
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      right: 30px;
+      opacity: 0;
+    }
+  }
+
+  .arrow-left2{
+    position: absolute;
+    top: 142em;
+    left: 34.5em;
+  }
+  .arrow-left2::before,
+  .arrow-left2::after{
+    content:"" ;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+  transform: rotate(228deg) translateY(-10%);
+  animation: arrow4 1s linear infinite;
+  }
+  .arrow-left2::after{
+    animation-delay: 1.5s;
+  }
+  @keyframes arrow4{
+    0%{
+      right: -10px;
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      right: 30px;
+      opacity: 0;
+    }
+  }
+.arrow-right{
+    position: absolute;
+    top: 247%;
+    left: 60%;
+  }
+  .arrow-right::before,
+  .arrow-right::after{
+    content:"" ;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+  transform: rotate(45deg) translateY(-50%);
+  animation: arrow 1s linear infinite;
+  }
+  .arrow-right::after{
+    animation-delay: 1.5s;
+  }
+  @keyframes arrow{
+    0%{
+      left: -10px;
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      left: 30px;
+      opacity: 0;
+    }
+  }
+
+  .arrow-right2{
+    position: absolute;
+    top: 247%;
+    left: 32%;
+  }
+  .arrow-right2::before,
+  .arrow-right2::after{
+    content:"" ;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+  transform: rotate(45deg) translateY(-50%);
+  animation: arrow 1s linear infinite;
+  }
+  .arrow-right2::after{
+    animation-delay: 1.5s;
+  }
+  @keyframes arrow{
+    0%{
+      left: -10px;
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      left: 30px;
+      opacity: 0;
+    }
+  }
+
+
+  .arrow-top{
+    position: absolute;
+    top: 220%;
+    left: 47%;
+  }
+  .arrow-top::before,
+  .arrow-top::after{
+    content:"" ;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+   
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+  transform: rotate(-45deg) translateY(-10%);
+  animation: arrow2 1s linear infinite;
+  }
+  .arrow-top::after{
+    animation-delay: 1.5s;
+  }
+  @keyframes arrow2{
+    0%{
+      top: -10px;
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      top: 30px;
+      opacity: 0;
+    }
+  }
+  .arrow-top2{
+    position: absolute;
+    top: 270%;
+    left: 48%;
+  }
+  .arrow-top2::before,
+  .arrow-top2::after{
+    content:"" ;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+   
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+  transform: rotate(-45deg) translateY(-10%);
+  animation: arrow2 1s linear infinite;
+  }
+  .arrow-top2::after{
+    animation-delay: 1.5s;
+  }
+  @keyframes arrow2{
+    0%{
+      top: -10px;
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      top: 30px;
+      opacity: 0;
+    }
+  }
+
+
+  .arrow-tp{
+    position: absolute;
+    top: 220%;
+    left: 51%;
+  }
+  .arrow-tp::before,
+  .arrow-tp::after{
+    content:"" ;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+  transform: rotate(135deg) translateY(-10%);
+  animation: arrow3 1s linear infinite;
+  }
+  .arrow-tp::after{
+    animation-delay: 1.5s;
+  }
+  @keyframes arrow3{
+    0%{
+      top: -10px;
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      top: 30px;
+      opacity: 0;
+    }
+  }
+
+
+  .arrow-tp2{
+    position: absolute;
+    top: 270%;
+    left: 51%;
+  }
+  .arrow-tp2::before,
+  .arrow-tp2::after{
+    content:"" ;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+  transform: rotate(135deg) translateY(-10%);
+  animation: arrow3 1s linear infinite;
+  }
+  .arrow-tp2::after{
+    animation-delay: 1.5s;
+  }
+  @keyframes arrow3{
+    0%{
+      top: -10px;
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      top: 30px;
+      opacity: 0;
+    }
+  }
+
+  .arrow-left{
+    position: absolute;
+    top: 240%;
+    left: 65%;
+  }
+  .arrow-left::before,
+  .arrow-left::after{
+    content:"" ;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+  transform: rotate(228deg) translateY(-10%);
+  animation: arrow4 1s linear infinite;
+  }
+  .arrow-left::after{
+    animation-delay: 1.5s;
+  }
+  @keyframes arrow4{
+    0%{
+      right: -10px;
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      right: 30px;
+      opacity: 0;
+    }
+  }
+
+  .arrow-left2{
+    position: absolute;
+    top: 240%;
+    left: 35%;
+  }
+  .arrow-left2::before,
+  .arrow-left2::after{
+    content:"" ;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+  transform: rotate(228deg) translateY(-10%);
+  animation: arrow4 1s linear infinite;
+  }
+  .arrow-left2::after{
+    animation-delay: 1.5s;
+  }
+  @keyframes arrow4{
+    0%{
+      right: -10px;
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      right: 30px;
+      opacity: 0;
+    }
+  }
+.cc1{
+    position: absolute;
+    top:210% ;
+    left:44%;
+    border-radius: 30px;
+    padding: 1em 2em 1em 2em;
+    background-color: #888;
+    box-shadow: 4px 4px 4px 4px #222;
+
+}
+.cc2{
+    position: absolute;
+    top: 240%;
+    left: 68%;
+    border-radius: 30px;
+    padding: 1em 2em 1em 2em;
+    background-color: #888;
+    box-shadow: 4px 4px 4px 4px #222;
+
+}
+.cc3{
+    position: absolute;
+    top: 280%;
+    left: 46%;
+    border-radius: 30px;
+    padding: 1em 2em 1em 2em;
+    background-color: #888;
+    box-shadow: 4px 4px 4px 4px #222;
+
+}
+.cc4{
+    position: absolute;
+    top: 240%;
+    left: 22%;
+    border-radius: 30px;
+    padding: 1em 2em 1em 2em;
+    background-color: #888;
+    box-shadow: 4px 4px 4px 4px #222;
+
+}
+.cc{
+    position: absolute;
+    top:237% ;
+    left: 45%;
+    border-radius: 30px;
+    padding: 2em 2em 2em 2em;
+    background-color: #888;
+    box-shadow: 4px 4px 4px 4px #222;
+}
+.texts{
+  color: white;
+  font-size: 0.9em;
+  font-family: initial;
+}
+.text1{
+  position: absolute;
+  top: 228vh;
+  left: 41%;
+}
+.text2{
+  position: absolute;
+  top: 228vh;
+  left: 54%;
+}
+.text3{
+  position: absolute;
+  top: 238vh;
+  left: 58%;
+}
+.text4{
+  position: absolute;
+  top: 254vh;
+  left: 58%;
+}
+.text5{
+  position: absolute;
+  top: 262vh;
+  left: 54%;
+}
+.text6{
+  position: absolute;
+  top: 252vh;
+  left: 43%;
+}
+.text7{
+  position: absolute;
+  top: 247vh;
+  left: 38%;
+}
+.text8{
+  position: absolute;
+  top: 238vh;
+  left: 38%;
+}
+  @media only screen and (max-width: 1240px){
+    .cc1 {
+      left: 42%;
+  }
+  .cc {
+    top: 239%;
+    left: 45%;
+    border-radius: 30px;
+    padding: 1em 1em 1em 1em;
+  }
+  .cc3 {
+    top: 269%;
+    left: 44%;
+    border-radius: 30px;
+    padding: 1em 2em 1em 2em;
+}
+.cc4 {
+  left: 16%;
+}
+.text6 {
+  position: absolute;
+  top: 254vh;
+  left: 40%;
+}
+.text4 {
+  position: absolute;
+  top: 251vh;
+  left: 59%;
+}
+.arrow-tp2 {
+  position: absolute;
+  top: 255%;
+  left: 51%;
+}
+.arrow-top2 {
+  position: absolute;
+  top: 255%;
+  left: 48%;
+}
+  }
+  @media only screen and (max-width: 1000px){
+  .texts{
+    font-size: 0.8em;
+  }
+  .cc {
+    top: 241%;
+    left: 44%;
+    border-radius: 30px;
+    padding: 1em 1em 1em 1em;
+  font-size: 13px;
+  }
+  .cc1{
+  font-size: 13px;
+    padding: 1em 1em 1em 1em;
+    left: 43%;
+  }
+  .cc2{
+  font-size: 13px;
+  left: 70%;
+  }
+  .cc3{
+    font-size: 13px;  
+    left: 43%;
+    top: 266%;
+  }
+  .cc4{
+    left: 14%;
+    font-size: 13px;
+  }
+  .arrow-tp2 {
+    position: absolute;
+    top: 256%;
+    left: 51%;
+  }
+  .arrow-top2 {
+    position: absolute;
+    top: 257%;
+    left: 48%;
+}
+.arrow-left2 {
+  position: absolute;
+  top: 240%;
+  left: 40%;
+}
+  }
+  @media only screen and (max-width: 700px){
+    .text{
+        font-size: 150%;
+    }
+    .h1{
+        font-size: 100%;
+    }
+    h2{
+        font-size: 100%;
+    }
+    label{
+        padding: 0.2em 0.6em;
+    }
+  }
+  @media only screen and (max-width: 600px){
+    .text{
+      font-size: 120%;
+    }
+    
+    .arrow::before,
+    .arrow::after{
+    width: 5px;
+    height: 5px;
+  }
+  .c{
+    font-size: 10px;
+  }
+  .cc1{
+    top: 225%;
+    left: 43%;
+  }
+  .cc2{
+    left: 72%;
+  }
+  .cc4{
+    left: 9%;
+  }
+  .cc3{
+    left: 44%;
+    top: 255%;
+  }
+  .arrow-right {
+    top: 244%;
+    left: 62%;
+  }
+  .arrow-right2 {
+    top: 244%;
+    left: 33%;
+}
+.arrow-top {
+  top: 235%;
+  left: 50%;
+}
+.arrow-top2 {
+  position: absolute;
+  top: 250%;
+  left: 50%;
+}
+.arrow-tp {
+  position: absolute;
+  top: 234%;
+  left: 54%;
+}
+.arrow-tp2 {
+  position: absolute;
+  top: 248%;
+  left: 54%;
+}
+.arrow-left {
+  position: absolute;
+  top: 241%;
+  left: 70%;
+}
+.arrow-left2 {
+  position: absolute;
+  top: 241%;
+  left: 40%;
+}
+.texts{
+  font-size: 0.5em;
+}
+.text1 {
+  position: absolute;
+  top: 231vh;
+  left: 38%;
+}
+.text2{
+  top: 231vh;
+  left: 58%;
+}
+.text4 {
+  top: 246vh;
+  left: 64%;
+}
+.text5 {
+  position: absolute;
+  top: 250vh;
+  left: 58%;
+}
+.text6{
+  top: 250vh;
+}
+.text7 {
+  top: 246vh;
+  left: 34%;
+}
+}
+@media only screen and (max-width: 350px){
+
+  .text{
+      font-size: 70%;
+      top: 15vh;
+  }
+  header{
+      height: 60vh;
+  }
+  #header h1{
+      font-size: 1.5em;
+  }
+  #header h2{
+      font-size: 70%;
+  }
+  label{
+      padding: 0.1em 0.4em;
+      font-size: 60%;
+  }
+  .c{
+    font-size: 7px;
+  }
+  .cc1{
+    top: 227%;
+    left: 43%;
+  }
+  .cc2{
+    left: 72%;
+  }
+  .cc4{
+    left: 9%;
+  }
+  .cc3{
+    left: 44%;
+    top: 255%;
+  }
+
+}
+@media only screen and (max-width: 250px){
+  .text{
+    top: 15%;
+    font-size: 0.6em;
+  }
+  header{
+    height: 40vh;
+  }
+  #header h1{
+    font-size: 1.1em;
+  }
+  #header h2{
+    font-size: 60%;
+  }
+  label {
+    padding: 0.3em 0.3em;
+    font-size: 50%;
+  }
+  .c{
+    font-size: 7px;
+  }
+  .cc2{
+    left: 80%;
+  }
+  .cc4{
+    left: 9%;
+  }
+  .cc3{
+    left: 44%;
+    top: 255%;
+  }
+  .c {
+    font-size: 6px;
+  }
+  .texts {
+    font-size: 0.4em;
+}
+.cc1 {
+  top: 229%;
+  left: 42%;
+}
+.cc3 {
+  left: 43%;
+  top: 253%;
+}
+.arrow::before, .arrow::after {
+  width: 3px;
+  height: 3px;
+}
+.text1, .text2{
+  top: 233vh;
+}
+}
